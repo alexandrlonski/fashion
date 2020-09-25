@@ -6,14 +6,15 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-    padding: 121px 0 140px 0
-    border-top: 1px solid #000000
+    padding: 134px 0 146px 0
+    border-top: 1px solid #E5EAF4
    
     &__text
       max-width: 392px
   &__title
-    margin-bottom: 24px
-    margin-top: 28px
+    max-width: 300px
+    margin-bottom: 26px
+    margin-top: 31px
     font-family: "HKGrotesk"
     font-style: normal
     font-weight: bold
@@ -28,7 +29,7 @@
     font-size: 20px
     line-height: 36px
     color: #5A7184
-    margin-bottom: 42px
+    margin-bottom: 50px
   &__wrapper
     &-cards
       display: flex
@@ -45,10 +46,9 @@
     &__text
       width: 312px
       position: absolute
-      padding: 20px 32px 20px 20px
+      padding: 25px 32px 20px 20px
       top: 297px
       left: 10px 
-      padding: 20px 32px 20px 20px
       background-color: #fff
     &__title
       font-family: "HKGrotesk"
@@ -58,7 +58,7 @@
       line-height: 32px
       letter-spacing: 0.2px
       color: #183B56
-      margin-bottom: 12px
+      margin-bottom: 17px
     &__read
       font-family: Open Sans
       font-style: normal
@@ -70,7 +70,8 @@
   &__button
     position: relative
     display: flex
-    align-items: center 
+    align-items: center
+    
     &-left
       display: flex
       align-items: center
@@ -78,28 +79,128 @@
       width: 55px
       height: 55px
       border-radius: 50%
-      border: 1px solid black
+      border: 2px solid #909090
       margin-right: 22px
       outline: none
-      &:hover
-        border: 2px solid black
+      background-color: inherit
+      background-image: url('../img/stories/row-left.svg') 
+      background-position: center
+      background-repeat: no-repeat
+      
     &-right
       display: flex
       align-items: center
       justify-content: center
       width: 55px
       height: 55px
-      transform: rotate(180deg)
       border-radius: 50%
-      border: 1px solid black
+      border: 2px solid #909090
       outline: none
-      &:hover
-        border: 2px solid black
-        
-    
+      background-color: inherit 
+      background-image: url('../img/stories/row-right.svg') 
+      background-position: center
+      background-repeat: no-repeat
+      
 .swiper-container 
-  margin-right: 10px
-  padding-right: 10px
-  
-  width: 662px
+  margin-right: 0
+  // padding-right: 10px
+  cursor: pointer
+  width: 656px !important
   height: 475px
+
+@media  ( max-width: 1200px )
+  .story
+    margin-bottom: 80px
+    &-container
+      max-width: 728px
+    &-block
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      padding: 80px 23px 0 23px
+      &__text
+        display: flex
+        max-width: 510px
+        flex-direction: column
+        align-items: center
+        margin-bottom: 36px
+    &__title
+      margin-top: 24px
+      margin-bottom: 16px    
+    &__description
+      margin-top: 0
+      text-align: center 
+      margin-bottom: 36px 
+
+@media  ( max-width: 991px )
+  .story
+    margin-bottom: 73px
+    &__title
+      max-width: 460px
+
+@media  ( max-width: 767px )
+  .story
+    margin-bottom: 0 
+  .story
+    &__wrapper-cards 
+      display: flex
+      flex-wrap: wrap
+      align-items: start
+      justify-content: center
+  .story
+    &-container
+      max-width: 476px
+    &-block
+      display: flex
+      padding-top: 47px
+      padding-bottom: 44px
+      padding-right: 0
+      padding-left: 0
+      &__text
+        margin-bottom: 26px
+    
+    &__title
+      text-align: center 
+    &__button
+      &-right
+        width: 48px
+        height: 48px   
+      &-left
+        width: 48px
+        height: 48px 
+        margin-right: 16px    
+
+
+@media  ( max-width: 500px )
+  .story
+    &-container 
+      max-width: 320px
+
+@media  ( max-width: 420px )
+  .story
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__description
+      font-size: 16px
+      line-height: 28px
+    &-card
+      &__image 
+        width: 270px
+        height: 277px
+      &__title
+        font-size: 20px
+        line-height: 24px
+      &__text 
+        width: 270px
+        position: absolute
+        padding: 20px 32px 20px 20px
+        top: 257px
+        left: 10px
+        padding: 20px 32px 20px 20px
+
+@media  ( max-width: 320px )              
+  .story
+    &-container 
+      max-width: 280px

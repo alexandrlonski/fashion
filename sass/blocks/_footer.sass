@@ -8,11 +8,10 @@
   &__main
     &-block
       display: flex
-      
-      margin-bottom: 72px
+      margin-bottom: 77px
   &__block
     max-width: 220px
-    margin-right: 65px  
+    margin-right: 48px  
     &-list
       display: flex
       flex-wrap: wrap
@@ -42,7 +41,7 @@
     border-radius: 50%
     background-color: #f0f0f0
     
-    margin-right: 6px
+    margin-right: 8px
     z-index: 1
     &-image
       display: flex
@@ -75,6 +74,7 @@
     display: flex
     flex-direction: column
     align-items: center
+    margin-left: 12px
   &__wrapper
     &-heart
       width: 56px
@@ -85,9 +85,12 @@
       background-color: #1576D8
       border-radius: 2000px
       margin-bottom: 24px
+      transition: all 0.3s ease
+      
 
   &__heart
     z-index: 2 
+    margin-top: 6px
   &__copyright
     font-family: 'Open Sans'
     font-style: normal
@@ -96,4 +99,130 @@
     line-height: 22px
     text-align: center
     color: #5A7184
+
+@media  ( max-width: 1200px )
+  .footer
+    &-container
+      max-width: 920px  
+
+@media  ( max-width: 991px )  
+  .footer
+    padding-top: 64px
+    padding-bottom: 64px
+    &-container
+      max-width: 672px
+    &__main
+      &-block
+        margin-left: 11px
+        margin-bottom: 16px
+    &__logo
+      &-text
+        width: 253px
+    &__block
+      margin-right: 30px
+      &-logo
+        margin-bottom: 25px 
+    &__list
+      margin-bottom: 25px 
+    &-bottom
+      margin-left: 0     
+
+@media  ( max-width: 767px ) 
+  .footer
+    &-container
+      max-width: 85%
+    &__main
+      &-block  
+        flex-direction: column-reverse 
+        align-items: center
+        margin-left: 0px
+        margin-bottom: 16px
+    &__block
+      text-align: center
+      max-width: 260px
+      margin-right: 0 
+      &-list
+        margin-bottom: 47px
+        justify-content: space-between
+
+    &__list
+      margin-bottom: 24px
+      margin-left: 30px
+      width: max-content
+      min-width: unset
+      &-title
+        font-size: 18px
+        line-height: 25px
+        margin-bottom: 20px
+    &__link
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 15px
+    &__logo
+      &-social 
+        justify-content: center
+
+@media  ( max-width: 576px )  
+  .footer
+    &__item 
+      margin-bottom: 15px
+
+@media  ( max-width: 420px )
+  .footer
+    &__list
+      margin-left: 0
+
+@media  ( max-width: 320px ) 
+  .footer
+    padding-top: 48px
+    padding-bottom: 48px
+    &-container
+      margin-left: 24px
+      margin-right: 42px
+      max-width: 263px
+    &__main
+      &-block  
+        flex-direction: column-reverse 
+        margin-left: 0px
+        margin-bottom: 16px
+    &__block
+      text-align: center
+      max-width: 260px
+      margin-right: -20px
+      &-logo
+        margin-bottom: 10px
+      &-list
+        margin-bottom: 11px
+        justify-content: space-between
+    &__social
+      margin-right: 7px
+    &__list
+      margin-bottom: 20px
+      margin-left: 0
+      margin-right: 8px
+      width: max-content
+      min-width: unset
+      &-title
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 20px
+    &__link
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 15px
+    &__logo
+      margin-bottom: 15px
+      &-text
+        font-size: 14px
+        line-height: 24px
+        margin-bottom: 22px
+        margin-left: -9px
+      &-social 
+        justify-content: center 
+        margin-left: 8px
+    &-bottom
+      display: none       
+                
+
+
 

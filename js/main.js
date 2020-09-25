@@ -48,23 +48,21 @@ $(document).ready(function () {
       enabled: true,
       onlyInViewport: true,
     },
-    breakpoints: {
-      // when window width is >= 320px
-      320: {
-        spaceBetween: 18,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    on: {
+      init() {
+        this.el.addEventListener('mouseenter', () => {
+          this.autoplay.stop();
+        });
 
-        // direction: 'gorizontal',
-      },
-      // when window width is >= 480px
-      480: {
-        spaceBetween: 18,
-
-      },
-      // when window width is >= 640px
-      640: {
-
+        this.el.addEventListener('mouseleave', () => {
+          this.autoplay.start();
+        });
       }
-    }
+    },
 
 
 
@@ -78,15 +76,45 @@ $(document).ready(function () {
 
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
     keyboard: {
       enabled: true,
       onlyInViewport: true,
     },
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: false,
+    },
+    on: {
+      init() {
+        this.el.addEventListener('mouseenter', () => {
+          this.autoplay.stop();
+        });
+
+        this.el.addEventListener('mouseleave', () => {
+          this.autoplay.start();
+        });
+      }
+    },
 
 
 
   })
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+
+      messages: {
+
+        email: {
+          required: "We need add your email",
+          email: "Email format name@domain.com",
+        },
+
+      },
+    });
+  });
   $(function () {
     $('.lazy').Lazy();
   });

@@ -1,5 +1,5 @@
 .reviews
-  margin-bottom: 80px
+  margin-bottom: 65px
   &-container
     max-width: 800px
     margin: auto
@@ -7,7 +7,7 @@
     display: flex
     flex-direction: column
     align-items: center
-    margin-bottom: 63px
+    margin-bottom: 68px
   &-text
     margin-top: 35px
     margin-bottom: 28px
@@ -28,14 +28,70 @@
     text-align: center
     letter-spacing: 0.2px
     color: #183B56
+    &_desctop
+      display: block
+    &_mobile
+      display: none  
 .swiper
   &-reviews
     position: relative
     overflow: hidden
+    cursor: pointer
   &-pagination
     color: #000000
+    z-index: 1
     &-bullet
+      width: 5px
+      height: 5px
+      margin: 0 7px !important
       &-active
         background: #183B56
+
+        
+
+ 
+
+@media  ( max-width: 991px )
+  .reviews
+    &-container
+      max-width: 630px 
+    &-block
+      margin-bottom: 57px  
+    &-text
+      margin-top: 25px
+      margin-bottom: 37px  
+@media  ( max-width: 767px )
+  .reviews
+    &-container 
+      max-width: 80%
+
+@media  ( max-width: 576px )
+  .reviews
+    &-name
+      display: none
+      max-width: 200px 
+      &_mobile
+        display: block
+      &_desctop
+        display: none
+        
+    &-text
+      margin-bottom: 25px
+      margin-top: 21px
+      font-size: 18px
+      line-height: 36px
+      letter-spacing: 0.12px
+
+@media  ( max-width: 320px )
+  .reviews
+    margin-bottom: 50px
+    &-container
+      max-width: 280px
+    &-block
+      margin-bottom: 42px   
+    
+
+        
+
    
 

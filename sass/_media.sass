@@ -1,658 +1,74 @@
 @media  ( max-width: 1200px )
-  .header
-    &-container
-      max-width: 900px
-  .hero
-    &-container
-      width: 90%
-
-    &-block
-      background-position: 100px 0    
-  .collection
-    &-container
-      max-width: 920px
-    &-block
-      justify-content: center
-    &__image
-      margin-right: 0  
-    &__text
-      text-align: center
-      max-width: 90% 
-  .trending
-    &-container
-      max-width: 920px
-    &-block
-      justify-content: space-evenly  
-  .story
-    margin-bottom: 80px
-    &-container
-      max-width: 728px
-    &-block
-      display: flex
-      flex-direction: column
-      justify-content: space-between
-      align-items: center
-      padding: 80px 23px 0 23px
-      &__text
-        display: flex
-        max-width: 510px
-        flex-direction: column
-        align-items: center
-        margin-bottom: 36px
-    &__title
-      margin-top: 24px
-      margin-bottom: 16px    
-    &__description
-      margin-top: 0
-      text-align: center 
-      margin-bottom: 36px 
   .swiper-container 
     margin: auto
-  .newsletter
-    &-container
-      max-width: 920px
-    &-text
-      max-width: 450px
-      margin-right: auto
-  .subscribe
-    width: 400px
-  .footer
-    &-container
-      max-width: 920px  
-      
 
-@media  ( max-width: 991px )  
-  .header
-    position: fixed
-    top: 0
-    margin-bottom: 30px
-    width: 100%
-    background-color: white
-    z-index: 10
-
-    &__block
-      height: 67px
-      max-width: 650px
-      margin: auto
-    &-container
-      max-width: 650px
-    &__right
-      display: block
-      width: 70%
-      position: fixed
-      top: 67px
-      left: 100%
-      width: 100%
-      padding-top: 30px
-      padding-bottom: 30px
-      padding-right: 20px
-      padding-left: 20px
-      
-      background-color: #fff
-      text-align: center
-      border-radius: 4px
-      transition: all 0.4s
-    
-
-      &__visible
-        display: block
-        left: 0
-        transition: left 0.6s
-      
-    &-button 
-      font-size: 22px
-      line-height: 28px
-      margin-left: 0
-      width: 65%
-  .list
-    &-navigation
-      display: block
-    &-item
-      margin-right: 0  
-      margin-bottom: 20px  
-      font-size: 22px
-      line-height: 28px
-  .hero
-    margin-top: 97px
-    margin-bottom: 80px 
-    &-container
-      max-width: 728px
-    &-block
-      padding-left: 28px
-      padding-top: 42px
-      padding-bottom: 36px
-      background-position: 13% -18px
-
-    &-title
-      font-size: 48px
-      line-height: 60px
-      margin-bottom: 20px
-      
-    &-text
-      max-width: 400px 
-      font-size: 18px
-      line-height: 32px
-      margin-bottom: 36px
-      margin-top: 0
-    &-button
-      margin-bottom: 40px 
-      padding: 16px 40px
-    &__footer
-      &-item
-        margin-right: 20px  
-         
-  
-  
- 
-    
-      
-  .collection
-    margin-bottom: 80px
-    &-block
-      justify-content: start
-
-    &-container
-      max-width: 672px
-    &__image
-      margin-bottom: 26px
-      
-    &__text
-      text-align: start
-      max-width: 100%  
-    &__title
-      margin-bottom: 18px 
-    &__description
-      margin-bottom: 30px
-
-  .menu-button 
-    display: block
-    position: relative
-    top: 0
-    left: 0
-    width: 22px
-    height: 17px
-    background-color: inherit
-    cursor: pointer
-  
-
-  .line-center 
-    position: absolute
-    top: 7.5px
-    width: 22px
-    height: 2px
-    background-color: black
-    transition: all 0.4s
-  
-
-  .line-center-active 
-    transform: rotate(90deg)
-    height: 0
-  
-  .line-center::before 
-    content: ""
-    display: block
-    position: absolute
-    top: 0px
-    left: 0px
-    width: 22px
-    height: 2px
-    background-color: black
-    margin-top: -7px
-    transition: all 0.4s
-  
-
-  .line-center::after 
-    content: ""
-    display: block
-    position: absolute
-    top: 0px
-    left: 0px
-    width: 22px
-    height: 2px
-    background-color: black
-    margin-top: 7px
-    transition: all 0.4s
-  
-
-  .line-center-active::before 
-    transform: rotate(45deg)
-    margin-top: 0px
-  
-
-  .line-center-active::after 
-    transform: rotate(-45deg)
-    margin-top: 0px
-  .trending
-    margin-bottom: 32px
-    &-container
-      max-width: 608px
-    &-block
-      justify-content: space-between   
-    &-card
-      margin-bottom: 48px
-      &__image
-        width: 280px
-    &-top
-      justify-content: center
-      margin-bottom: 56px
-    &__title
-      margin-bottom: 28px 
-  .reviews
-    margin-bottom: 80px
-    &-container
-      max-width: 630px 
-  
-  .newsletter
-    padding-top: 72px
-    padding-bottom: 80px
-    &-block
-      position: relative
-      margin: auto
-      display: flex
-      flex-direction: column
-      flex-wrap: wrap
-      align-items: center
-    &-text
-      margin-right: 0
-      text-align: center 
-    &-title
-      margin-top: 0
-      margin-bottom: 14px
-    &-description
-      margin-bottom: 56px  
-  .footer
-    padding-top: 64px
-    padding-bottom: 64px
-    &-container
-      max-width: 672px
-    &__main
-      &-block
-        margin-left: 11px
-        margin-bottom: 16px
-    &__logo
-      &-text
-        width: 253px
-    &__block
-      margin-right: 30px          
-
-
-@media  ( max-width: 767px ) 
-  .container
-    max-width: 82%
-    &-hero
-      max-width: 90%
-  .header
-    &__block 
-      height: 67px
-      max-width: 85%
-      margin: auto
-  
-  .hero
-    &-block
-      background-position: 40% -18px    
-  .collection
-    &-container 
-      max-width: 90%
-
-    &__image
-      &-left
-        width: 46%
-      &-right
-        width: 46% 
-  .trending
-    &-container 
-      max-width: 90%
-  .reviews
-    &-container 
-      max-width: 80%
-  .story
-    margin-bottom: 0    
-    
-  .footer
-    &-container
-      max-width: 85%
-    &__main
-      &-block  
-        flex-direction: column-reverse 
-        align-items: center
-        margin-left: 0px
-        margin-bottom: 16px
-    &__block
-      text-align: center
-      max-width: 260px
-      margin-right: 0 
-      &-list
-        margin-bottom: 47px
-        justify-content: space-between
-
-    &__list
-      margin-bottom: 24px
-      margin-left: 30px
-      width: max-content
-      min-width: unset
-      &-title
-        font-size: 18px
-        line-height: 25px
-        margin-bottom: 20px
-    &__link
-      font-size: 16px
-      line-height: 22px
-      margin-bottom: 15px
-    &__logo
-      &-social 
-        justify-content: center       
-@media  ( max-width: 700px )
-  .story
-    &__wrapper-cards 
-      display: flex
-      flex-wrap: wrap
-      align-items: start
-      justify-content: center
-
+@media  ( max-width: 991px )
   .swiper-container 
-    margin: auto
-    width: 526px
-    height: 1000px
+    margin-left: 3px
+    margin-right: auto
+  
+@media  ( max-width: 767px )
 
-@media  ( max-width: 576px )   
-  .hero
-    &-block
-      padding-top: 381px
-      padding-left: 20px
-      padding-right: 20px 
-      background-position: 60% -18px
-      text-align: center
-    &__footer
-      justify-content: center
-      &-item
-        margin-bottom: 20px
-    &-text
-      font-size: 16px
-      line-height: 28px
-          
-  .border
-    &-round
-      width: 21px
-      border: none
-            
-  .collection
-    &__image
-      &-big
-        width: 100%
-      &-small
-        width: 48%  
-      &-left 
-        width: 100%
-        margin-right: 0
-        margin-bottom: 14px
-      &-right
-        width: 100%
-        flex-direction: row 
-        justify-content: space-between 
-    &__text
-      text-align: center
-        
-  .trending
-    margin-bottom: 48px
-    &-container
-      max-width: 90%
-    &-block
-      justify-content: space-evenly   
-    &-top
-      flex-direction: column  
-    &__title
-      font-size: 28px
-      line-height: 36px
-      margin-bottom: 24px   
-    &__category
-      &-item 
-        font-size: 16px
-        line-height: 22px
-        margin-left: 16px
-        margin-left: 3px 
-    &__wrapper
-      &-image
-        width: 140px
-        height: 170px
-        overflow: hidden
-        margin-bottom: 13px
-        border-radius: 8px
-    &-card
-      position: relative
-      margin-bottom: 50px
-      &__image
-        width: 140px
-        height: 240px
-      &__title
-        font-size: 16px
-        line-height: 20px
-      &__price
-        font-size: 14px
-        line-height: 24px
-        margin-right: 9px
-      &__basket
-        left: 55px
-        width: 25px
-        bottom: 2px
-    &-button
-      width: 140px
-      height: 170px
-      padding-top: 40px
-      padding-bottom: 29px
-      padding-right: 24px
-      padding-left: 24px
-      &__text
-        font-size: 20px
-        line-height: 24px      
-  .story
-    &-block
-      padding-top: 47px
-      padding-bottom: 64px
-      padding-right: 0
-      padding-left: 0
-    &-container
-      max-width: 476px
-    &-block
-      display: flex
-    &__title
-      text-align: center  
   .swiper-container 
     margin: auto
     max-width: 317px
     height: 1000px
-  .newsletter
-    padding-top: 64px
-    padding-bottom: 131px
-    &-container
-      max-width: 75%
-    &-title
-      font-size: 32px
-      line-height: 40px
-      margin-bottom: 24px
-    &-description
-      font-size: 18px
-      line-height: 28px
-      margin-bottom: 36px
-  .subscribe
-    width: 100%
-    &__button
-      position: absolute
-      top: 67px
-      right: 0
-      width: 100%  
-      border-radius: 8px
-    &__input
-      padding-right: 10px   
-
-
-@media  ( max-width: 500px )
-  .header
-    &-button
-      width: 90%
-  .trending
-    &-container
-      max-width: 70%  
-    &-block
-      justify-content: space-between  
-  .story
-    &-container 
-      max-width: 320px
-
+  
 @media  ( max-width: 420px )
-  .trending
-    &-container
-      max-width: 90% 
-  .story
-    &__title
-      font-size: 28px
-      line-height: 36px
-    &__description
-      font-size: 16px
-      line-height: 28px
-    &-card
-      &__image 
-        width: 270px
-        height: 277px
-      &__title
-        font-size: 20px
-        line-height: 24px
-      &__text 
-        width: 270px
-        position: absolute
-        padding: 20px 32px 20px 20px
-        top: 257px
-        left: 10px
-        padding: 20px 32px 20px 20px
-  .swiper
-    &-container 
-      margin: auto
-      max-width: 290px
-      height: 850px
+  .swiper-container 
+    margin: auto
+    max-width: 290px
+    height: 850px
 
-  .footer
-    &__list
-      margin-left: 0
-
-@media  ( max-width: 320px ) 
+@media ( max-height: 430px )
   .header
-    &-container
-      max-width: 272px
-  .hero
-    &-container
-      max-width: 320px
-  .collection
-    &-container
-      max-width: 290px
-  .trending
-    margin-bottom: 48px
-    &-container
-      max-width: 290px 
-    &__category
-      &-item 
-        margin-left: 3px 
-    &__wrapper
-      &-image
-        width: 140px
-        height: 170px
-        overflow: hidden
-        margin-bottom: 13px
-        border-radius: 8px
-    &-card
-      position: relative
-      margin-bottom: 50px
-      &__image
-        width: 140px
-        height: 240px
-      &__title
-        font-size: 16px
-        line-height: 20px
-      &__price
-        font-size: 14px
-        line-height: 24px
-        margin-right: 9px
-     
-    &-button
-      width: 140px
-      height: 170px
-      padding-top: 40px
-      padding-bottom: 29px
-      padding-right: 24px
-      padding-left: 24px
-      &__text
-        font-size: 20px
-        line-height: 24px
-  .reviews
-    margin-bottom: 54px
-    &-container
-      max-width: 280px
-    &-text
-      font-size: 18px
-      line-height: 36px
-    &-name
-      width: 190px  
-  .story
-    &-container 
-      max-width: 280px    
-  .newsletter
-    padding-top: 64px
-    padding-bottom: 131px
-    &-container
-      max-width: 280px
-    &-title
-      font-size: 28px
-      line-height: 36px
-      margin-bottom: 24px
-    &-description
-      font-size: 16px
-      line-height: 28px
-      margin-bottom: 36px
-  .subscribe
-    width: 100%
-    &__button
-      position: absolute
-      top: 67px
-      right: 0
-      width: 100%
-      height: 48px 
-      
-      
-    &__input
-      height: 48px  
-  .footer
-    &-container
-      max-width: 263px
-    &__main
-      &-block  
-        flex-direction: column-reverse 
-        margin-left: 0px
-        margin-bottom: 16px
-    &__block
-      text-align: center
-      max-width: 260px
-      margin-right: 0 
-      &-list
-        margin-bottom: 47px
-        justify-content: space-between
+    &__right
+      &__visible
+        height: 80vh
+        overflow: auto
 
-    &__list
-      margin-bottom: 24px
-      margin-left: 0
-      width: max-content
-      min-width: unset
-      &-title
-        font-size: 16px
-        line-height: 22px
-        margin-bottom: 20px
-    &__link
-      font-size: 14px
-      line-height: 20px
-      margin-bottom: 15px
-    &__logo
-      &-social 
-        justify-content: center 
-    &-bottom
-      display: none       
-    
+
+@media(hover: hover) and (pointer: fine) 
+  .header
+    &-button
+      &:hover
+        border: 2px solid #3585f5
+        color: #3585f5
+  .hero
+    &-button
+      &:hover
+        &:hover
+          background-color: #31495c
+
+  .collection
+    &__check
+      &:hover
+        color: #3585f5
+  .trending
+    &-button
+      &:hover
+        background-color: #3585f5      
+  .story
+    &__button
+      &-left
+        &:hover
+          border: 2px solid black
+          background-image: url('../img/stories/row-left-active.svg')
+      &-right
+        &:hover
+          border: 2px solid black
+          background-image: url('../img/stories/row-right-active.svg')
+  
+  .subscribe
+    &__button
+      &:hover
+        background-color: #31495c
+
+  .footer
+    &__wrapper
+      &-heart 
+        &:hover
+          background-color: #3585f5
 
 
 

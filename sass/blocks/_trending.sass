@@ -1,5 +1,5 @@
 .trending
-  margin-bottom: 95px
+  margin-bottom: 103px
   &-container
     max-width: 1135px
     margin: auto
@@ -15,7 +15,6 @@
     font-weight: bold
     font-size: 48px
     line-height: 60px
-    letter-spacing: 0.2px
     color: #183B56
     margin-top: 0
     margin-bottom: 0
@@ -49,14 +48,41 @@
       border-radius: 8px 
       margin-bottom: 20px
       overflow: hidden
-    
+  &__card-1
+    background-image: url(../img/trending/card-1.jpg) 
+    background-size: cover
+    background-repeat: no-repeat 
+  &__card-2
+    background-image: url(../img/trending/card-2.jpg) 
+    background-size: cover
+    background-repeat: no-repeat 
+  &__card-3
+    background-image: url(../img/trending/card-3.jpg) 
+    background-size: cover
+    background-repeat: no-repeat 
+  &__card-4
+    background-image: url(../img/trending/card-4.jpg) 
+    background-size: cover
+    background-repeat: no-repeat 
+  &__card-5
+    background-image: url(../img/trending/card-5.jpg) 
+    background-size: cover
+    background-repeat: no-repeat 
+  &__card-6
+    background-image: url(../img/trending/card-6.jpg) 
+    background-size: cover
+    background-repeat: no-repeat 
+  &__card-7
+    background-image: url(../img/trending/card-7.jpg) 
+    background-size: cover
+    background-repeat: no-repeat           
   &-card
     position: relative
     margin-bottom: 50px
 
     &__image
       width: 260px
-      height: 350px
+      
     
     &__title
       font-family: "HKGrotesk"
@@ -80,7 +106,7 @@
       border: none
       background-color: inherit
       position: absolute
-      right: 10px
+      right: 3px
       bottom: 4px  
       cursor: pointer
   &-button
@@ -98,8 +124,11 @@
     border: none
     background-color: #1565D8
     cursor: pointer
+    transition: all 0.3s ease
+    // &:hover
+    //   background-color: #3585f5
     &__text
-      font-family: HK Grotesk
+      font-family: "HKGrotesk"
       font-style: normal
       font-weight: bold
       font-size: 24px
@@ -113,6 +142,173 @@
   font-weight: 900    
 .visible
   display: flex  
+
+@media  ( max-width: 1200px )
+  .trending
+    &-container
+      max-width: 920px
+    &-block
+      justify-content: space-evenly 
+
+@media  ( max-width: 991px )
+  .trending
+    margin-bottom: 40px
+
+    &-container
+      max-width: 608px
+    &-block
+      justify-content: space-between 
+
+    &-card
+      margin-bottom: 48px
+      &__image
+        width: 280px
+      &__basket
+        right: 4px
+        bottom: 2px
+    &__wrapper
+      &-image
+        width: 280px
+    &-top
+      justify-content: center
+      margin-bottom: 56px
+    &__title
+      margin-bottom: 28px 
+    &-button
+      width: 280px  
+
+@media  ( max-width: 767px )
+  .trending
+    &-container 
+      max-width: 90%
+
+@media  ( max-width: 650px )      
+  .trending
+    &__wrapper
+      &-image
+        width: 250px
+        
+@media  ( max-width: 576px )
+  .trending
+    margin-bottom: 48px
+    &-container
+      max-width: 90%
+    &-block
+      justify-content: space-evenly   
+    &-top
+      margin: auto
+      max-width: 85%
+      flex-direction: column 
+      margin-bottom: 36px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 24px   
+    &__category
+      width: 100%
+      &-item 
+        font-size: 16px
+        line-height: 22px
+        margin-left: 16px
+        
+    &__wrapper
+      &-image
+        width: 140px
+        height: 170px
+        overflow: hidden
+        margin-bottom: 13px
+        border-radius: 8px
+    &-card
+      position: relative
+      margin-bottom: 26px
+      &__image
+        width: 140px
+        height: 240px
+      &__title
+        font-size: 16px
+        line-height: 20px
+        margin: 0
+      &__price
+        font-size: 14px
+        line-height: 24px
+        margin-right: 0px
+        margin-left: 0
+      &__basket
+        left: 40px
+        width: 25px
+        bottom: 2px
+    &-button
+      width: 140px
+      height: 170px
+      padding-top: 40px
+      padding-bottom: 29px
+      padding-right: 24px
+      padding-left: 24px
+      &__text
+        font-size: 20px
+        line-height: 24px 
+
+
+@media  ( max-width: 500px )
+  .trending
+    &-container
+      max-width: 75% 
+    &-top
+      max-width: 100%   
+    &-block
+      justify-content: space-between  
+
+@media  ( max-width: 420px ) 
+  .trending
+    &-container
+      max-width: 90%  
+
+@media  ( max-width: 360px )
+  .trending
+    &__category
+      &-item 
+        margin-left: 3px 
+
+@media  ( max-width: 320px ) 
+  .trending
+    margin-bottom: 36px
+    
+    &-container
+      max-width: 290px 
+
+    &__category
+      &-item 
+        margin-left: 3px 
+
+    &__wrapper
+      &-image
+        width: 140px
+        height: 170px
+        overflow: hidden
+        margin-bottom: 12px
+        border-radius: 8px
+
+    &-card
+      &__image
+        width: 140px
+        height: 240px
+      &__title
+        font-size: 16px
+        line-height: 20px
+      
+        
+        
+
+    &-button
+      width: 140px
+      height: 170px
+      padding-top: 40px
+      padding-bottom: 29px
+      padding-right: 24px
+      padding-left: 24px
+      &__text
+        font-size: 20px
+        line-height: 24px                       
 
 
 
