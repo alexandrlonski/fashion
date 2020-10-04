@@ -67,11 +67,11 @@
     
   &__button
     position: absolute
-    top: 4px
+    top: 2px
     right: 4px
     min-width: 143px
-    background: #183B56
-    border: none 
+    background: rgba(#183B56, 0.1 ) 
+    border: 2px solid  #183B56
     cursor: pointer 
     transition: all 0.3s ease
     z-index: 1
@@ -84,7 +84,7 @@
     font-size: 18px
     line-height: 25px
     text-align: center
-    color: #FFFFFF
+    color: #183B56
     
   
 @media  ( max-width: 1200px )
@@ -120,7 +120,13 @@
     &-description
       margin-bottom: 56px 
   .subscribe 
-    width: 447px    
+    width: 447px 
+
+@media  ( max-width: 767px )
+  .subscribe
+    &__button
+      background-color: #183B56
+      color: #ffffff
 
 @media  ( max-width: 576px )
   .newsletter

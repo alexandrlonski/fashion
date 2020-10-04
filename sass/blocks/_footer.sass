@@ -40,6 +40,7 @@
     height: 40px
     border-radius: 50%
     background-color: #f0f0f0
+    transition: all .4s ease
     
     margin-right: 8px
     z-index: 1
@@ -70,6 +71,7 @@
     font-size: 16px
     line-height: 22px
     color: #183B56
+    transition: all .4s 
   &-bottom
     display: flex
     flex-direction: column
@@ -85,7 +87,7 @@
       background-color: #1576D8
       border-radius: 2000px
       margin-bottom: 24px
-      transition: all 0.3s ease
+      transition: all 0.5s ease
       
 
   &__heart
@@ -99,6 +101,10 @@
     line-height: 22px
     text-align: center
     color: #5A7184
+.icon
+  fill: #5A7184
+  transition: all 10s ease
+
 
 @media  ( max-width: 1200px )
   .footer
@@ -166,6 +172,16 @@
   .footer
     &__item 
       margin-bottom: 15px
+  .icon
+    &-instagram
+      fill: url(#instagram)
+    &-google
+      fill: url(#google)
+    &-twitter
+      fill: url(#twitter)
+    &-linkedin
+      fill: url(#twitter)
+
 
 @media  ( max-width: 420px )
   .footer

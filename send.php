@@ -26,7 +26,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'forpractice.learning@gmail.com'; // Логин на почте
-    $mail->Password   = '1Ca2ojeb'; // Пароль на почте
+    $mail->Password   = ''; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('forpractice.learning@gmail.com', 'Александр Лонский'); // Адрес самой почты и имя отправителя

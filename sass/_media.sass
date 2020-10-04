@@ -32,13 +32,20 @@
   .header
     &-button
       &:hover
-        border: 2px solid #3585f5
-        color: #3585f5
+        background-color: #1565D8
+        color: #ffffff
+    &__left
+      &:hover
+        .logo
+          &-text
+            fill: url(#logo)
+            
   .hero
     &-button
       &:hover
         &:hover
-          background-color: #31495c
+          color: #ffffff
+          background-color: rgba(#183B56, 1 )
 
   .collection
     &__check
@@ -62,13 +69,41 @@
   .subscribe
     &__button
       &:hover
-        background-color: #31495c
+        background: rgba(#183B56, 1 )
+        color: #ffffff
 
   .footer
     &__wrapper
       &-heart 
         &:hover
-          background-color: #3585f5
+          background: rgb(21,118,216)
+          background: linear-gradient(90deg, rgba(21,118,216,1) 0%, rgba(97,153,247,1) 98%)
+    &__social
+      &:hover
+        background-color: #e9e9e9
+        .icon
+          &-instagram
+            fill: url(#instagram)
+          &-google
+            fill: url(#google) 
+          &-twitter 
+            fill: url(#twitter)
+          &-linkedin
+            fill: url(#twitter)
+    &__block-logo
+      &:hover
+        .logo
+          &-text
+            fill: url(#logo)
+    &__link
+      &:hover
+        background: linear-gradient(45deg, #183B56 0%, #2b95f8 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        color: #0B2349
+
+
+
 
 
 
